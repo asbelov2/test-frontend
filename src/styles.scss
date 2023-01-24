@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/Inter-Regular.otf) format("opentype");
+  }
+
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/Inter-Bold.otf) format("opentype");
+    font-weight: bold;
+  }
+
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/Inter-Light.otf) format("opentype");
+    font-weight: 300;
+  }
+
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/Inter-Italic.otf) format("opentype");
+    font-style: italic;
+  }
+
+@font-face {
+    font-family: Montserrat;
+    src: url(assets/fonts/Montserrat-Regular.ttf) format("truetype");
+  }
+  
+@font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto-Regular.ttf) format("truetype");
+  }
+@font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto-Bold.ttf) format("truetype");
+    font-weight: bold;
+  }
+@font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto-Light.ttf) format("truetype");
+    font-weight: 300;
+  }
+@font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto-Italic.ttf) format("truetype");
+    font-style: italic;
+  }

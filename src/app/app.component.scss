@@ -1,0 +1,36 @@
+@import './../responsive.scss';
+
+.app__wrap {
+    margin-left: 50%;
+    transform: translate(-50%,0);
+}
+
+@include before('sm') {
+    .app__wrap{
+        width: 376px;
+    }
+}
+
+@include from('sm') {
+    .app__wrap{
+        width: 576px;
+    }
+}
+
+@include from('md') {
+    .app__wrap{
+        width: 768px;
+    }
+}
+
+@include from('lg') {
+    .app__wrap{
+        width: 1024px;
+    }
+}
+
+@include from('xl') {
+    .app__wrap{
+        width: 1440px;
+    }
+}

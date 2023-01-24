@@ -1,0 +1,34 @@
+<div class="footer-wrap">
+  <div class="footer-top-wrap">
+    <div class="footer-top">
+      <!--  GENERATE COLUMNS  -->
+      <div *ngFor="let column of footerColumns" class="footer-top-link-column">
+        <div class="footer-top-link-column__header">
+          {{column.header}}
+        </div>
+        <div class="footer-top-link-column-link-container">
+          <!--  GENERATE LINKS  -->
+          <div *ngFor="let link of column.links" class="footer-top-link-column__link">
+            {{link.text}}
+            <div *ngIf="link?.badge" class="footer-top-link-column__badge">{{link.badge}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom-wrap">
+    <div class="footer-bottom">
+      <div class="footer-bottom-logo">
+        <div class="footer-bottom-logo__image">
+          <img src="./assets/images/footer-logo.svg" alt="logo"/>
+        </div>
+        <div class="footer-bottom-logo__text">
+          СМЕТНЫЙ ОФИС
+        </div>
+      </div>
+      <div class="footer-bottom-copyright">
+        © 2023 Все права защищены. Сметный офис
+      </div>
+    </div>
+  </div>
+</div>

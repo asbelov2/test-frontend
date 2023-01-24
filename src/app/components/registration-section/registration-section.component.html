@@ -1,0 +1,33 @@
+<div class="registration-wrap">
+    <div class="registration">
+        <div class="registration-heading">
+            <div class="registration-heading__header">
+                Быстрая регистрация в Сметном офисе
+            </div>
+            <div class="registration-heading__supporting-text">
+                Начните работу прямо сейчас
+            </div>
+        </div>
+        <form class="registration-form">
+            <div class="registration-form__name">
+                <input type="name" name="name" [(ngModel)]="name" #namef="ngModel" placeholder="Ваше имя" class="registration-form__input" required />
+                <div [hidden]="namef.valid || namef.untouched" class="registration-form__input-error">
+                    Не указано имя
+                </div>
+                <div class="registration-form__input-hint">
+                    
+                </div>
+            </div>
+            <div class="registration-form__email">
+                <input type="email" name="email" [(ngModel)]="email" #mail="ngModel" placeholder="Почта" class="registration-form__input" required pattern="^[A-Za-z0-9._+\-\']+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$"/>
+                <div [hidden]="mail.valid || mail.untouched" class="registration-form__input-error">
+                    Некорректный email
+                  </div>
+                <div class="registration-form__input-hint">
+                    Нажимая кнопку “Отправить” вы соглашаетесь на обработку персональных данных
+                </div>
+            </div>
+            <input type="submit" value="Зарегистрироваться" (click)="sendForm()" class="registration-form__submit-button"/>
+        </form>
+    </div>
+</div>

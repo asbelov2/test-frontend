@@ -1,0 +1,114 @@
+@import './../../../responsive.scss';
+
+.quote-wrap {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 32px;
+    gap: 32px;
+    background: #FFFFFF;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+}
+
+.quote-logo {
+    width: 140px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.quote-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #101828; 
+}
+
+.quote-person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;    
+}
+
+.quote-person__avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 64px;
+    height: 64px;
+    background: url("../../../assets/images/Avatar.png"), #A2A8CD;
+    border-radius: 200px;
+}
+
+.quote-person__name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #101828;
+}
+
+.quote-person__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #475467;
+}
+
+@include before('xl') {
+    .quote-wrap {
+        width: 1024px;
+    }
+    .quote-text {
+        font-size: 42px;
+        line-height: 56px;
+    }
+}
+
+@include before('lg') {
+    .quote-wrap {
+        width: 768px;
+    }
+    .quote-text {
+        font-size: 36px;
+        line-height: 52px;
+    }
+}
+
+@include before('md') {
+    .quote-wrap {
+        width: 576px;
+    }
+    .quote-text {
+        font-size: 28px;
+        line-height: 48px;
+    }
+}
+
+@include before('sm') {
+    .quote-wrap {
+        width: 376px;
+    }
+}

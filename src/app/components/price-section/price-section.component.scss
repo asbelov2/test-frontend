@@ -1,0 +1,352 @@
+@import './../../../responsive.scss';
+
+.price-wrap {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 96px;
+    background: #FFFFFF;
+}
+
+.price {
+    width: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 88px;
+}
+
+.price-heading {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 32px;
+    gap: 32px
+}
+
+.price-heading-allheaders {
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;    
+}
+
+.price-heading-topheaders {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;    
+}
+
+.price-heading-headers__subheader {
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #4E4D9D;
+}
+
+.price-heading-headers__header {
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #101828;
+}
+
+.price-heading__supporting-text {
+    display: flex;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #475467;
+}
+
+.price-rates {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+}
+
+.price-rates-card {
+    width: 350px;
+    height: 627px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    background: #FFFFFF;
+    border: 1px solid #EAECF0;
+    box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+    border-radius: 16px;
+}
+
+.price-rates-card-top {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 32px;
+    border-bottom: 1px solid #EAECF0;
+}
+
+.price-rates-card-top-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+    gap: 16px;
+}
+
+.price-rates-card-top-header__heading {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #475467;
+}
+
+.price-rates-card-top-header__badge {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 12px;
+    background: #F9F5FF;
+    mix-blend-mode: multiply;
+    border-radius: 16px;  
+    text-align: center;
+    color: #5654DB;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.price-rates-card-top-price {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 4px;
+}
+
+.price-rates-card-top-price__cost {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    color: #101828;
+}
+
+.price-rates-card-top-price__period {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 0px 8px;
+}
+
+.price-rates-card-top-description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #475467;
+    
+}
+
+.price-rates-card-top-actions {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+}
+
+.price-rates-card-top-actions__main-button {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    gap: 8px;
+    background: #1719DD;
+    border: 1px solid #1719DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.price-rates-card-top-actions__main-button:hover {
+    background: #13119B;
+  }
+
+.price-rates-card-top-actions__main-button:active {
+    transform: translateY(-2px);
+  }
+
+.price-rates-card-top-actions__secondary-button {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    gap: 8px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    color: #344054;
+    transition: all 0.25s ease;
+}
+
+.price-rates-card-top-actions__secondary-button:hover {
+    background: #dddddd;
+  }
+
+.price-rates-card-top-actions__secondary-button:active {
+    transform: translateY(-2px);
+  }
+
+.price-rates-card-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 32px 40px;
+    gap: 24px;
+}
+
+.price-rates-card-bottom__header {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #101828;
+}
+
+.price-rates-card-bottom-possibilities {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+}
+
+.price-rates-card-bottom-possibilities-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    
+}
+
+.price-rates-card-bottom-possibilities-item__check-icon {
+    border-radius: 12px;
+    order: 2px solid #7F56D9;
+}
+
+.price-rates-card-bottom-possibilities-item__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+}
+
+@include before('xl') {
+    .price-rates-card {
+        height: 680px;
+    }
+
+    .price-rates-card-top-header {
+        height: 56px;
+    }
+
+    .price {
+        width: 1024px;
+    }
+}
+
+@include before('lg') {
+    .price {
+        width: 768px;
+    }
+    .price-rates {
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 32px;
+    }
+}
+
+@include before('md') {
+    .price {
+        width: 576px;
+    }
+}
+
+@include before('sm') {
+    .price {
+        width: 376px;
+    }
+}

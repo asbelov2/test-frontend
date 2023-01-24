@@ -1,0 +1,63 @@
+<div class="price-wrap">
+    <div class="price">
+        <div class="price-heading">
+            <div class="price-heading-allheaders">
+                <div class="price-heading-topheaders">
+                    <div class="price-heading-headers__subheader">
+                        Тарифы
+                    </div>
+                    <div class="price-heading-headers__header">
+                        Тарифы помогут сэкономить
+                    </div>
+                </div>
+                <div class="price-heading__supporting-text">
+                    У нас возможности есть для каждого
+                </div>
+            </div>
+        </div>
+        <div class="price-rates">
+            <div *ngFor='let rate of rates' class="price-rates-card">
+                <div class="price-rates-card-top">
+                    <div class="price-rates-card-top-header">
+                        <div class="price-rates-card-top-header__heading">
+                            {{rate.name}}
+                        </div>
+                        <div *ngIf="rate?.badge" class="price-rates-card-top-header__badge">
+                            {{rate?.badge}}
+                        </div>
+                    </div>
+                    <div class="price-rates-card-top-price">
+                        <div class="price-rates-card-top-price__cost">
+                            {{rate.price+"₽"}}
+                        </div>
+                        <div class="price-rates-card-top-price__period">
+                            {{getPeriodText(rate.period)}}
+                        </div>
+                    </div>
+                    <div class="price-rates-card-top-description">
+                        {{rate.description}}
+                    </div>
+                    <div class="price-rates-card-top-actions">
+                        <input type="button" value="Приобрести тариф" class="price-rates-card-top-actions__main-button"/>
+                        <input type="button" value="Подробнее" class="price-rates-card-top-actions__secondary-button"/>
+                    </div>
+                </div>
+                <div class="price-rates-card-bottom">
+                    <div class="price-rates-card-bottom__header">
+
+                    </div>
+                    <div *ngFor='let possibility of rate.possibilities' class="price-rates-card-bottom-possibilities">
+                        <div class="price-rates-card-bottom-possibilities-item">
+                            <div class="price-rates-card-bottom-possibilities-item__check-icon">
+                                <img src="./assets/images/check-icon.svg" alt="check-icon"/>
+                            </div>
+                            <div class="price-rates-card-bottom-possibilities-item__text">
+                                <span><b>{{possibility.main}}</b> <i>{{possibility.secondary}}</i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
